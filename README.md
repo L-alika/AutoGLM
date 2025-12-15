@@ -1,3 +1,37 @@
+安装结果：
+
+- ADB版本：Android Debug Bridge version 1.0.41 (Version 36.0.0-13206524)
+- 安装路径：D:\Alika_\projects\Android Debug Bridge\platform-tools\adb.exe
+使用方法：
+
+1. 现在您可以通过命令行使用ADB命令，例如：
+   
+   ```
+   platform-tools\adb.exe devices
+   ```
+   这个命令会显示连接到电脑的所有Android设备。
+2. 如果您想在任何目录下都能直接使用ADB命令，可以将ADB添加到系统环境变量中：
+   
+   - 右键点击「此电脑」→「属性」→「高级系统设置」→「环境变量」
+   - 在「系统变量」中找到「Path」变量，点击「编辑」
+   - 点击「新建」，添加路径：D:\Alika_\projects\Android Debug Bridge\platform-tools
+   - 点击「确定」保存所有更改
+3. 添加环境变量后，您可以在任何命令行窗口中直接使用ADB命令：
+   
+   ```
+   adb devices
+   adb shell
+   adb install app.apk
+   ```
+注意事项：
+
+- 使用ADB前需要在Android设备上启用「开发者选项」和「USB调试」
+- 确保使用兼容的USB数据线连接设备
+- 如果设备未被识别，请尝试更换USB端口或重新安装设备驱动
+ADB已准备就绪，可以开始使用了！
+
+
+
 # Open-AutoGLM
 
 [Readme in English](README_en.md)
@@ -470,7 +504,7 @@ Agent 可以执行以下操作：
 
 | 操作           | 描述              |
 |--------------|-----------------|
-| `Launch`     | 启动应用            |  
+| `Launch`     | 启动应用            |
 | `Tap`        | 点击指定坐标          |
 | `Type`       | 输入文本            |
 | `Swipe`      | 滑动屏幕            |
